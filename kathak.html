@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kathak Dance Course</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    :root {
+      --primary-color: #453ce7;
+      --secondary-color: #2bc0ac;
+      --accent-color: #80d9c6;
+      --text-color: #333;
+      --bg-color: #F9EBEA;
+      --transition: 0.3s ease-in-out;
+    }
+
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body Styles */
+    body {
+      font-family: 'Open Sans', sans-serif;
+      line-height: 1.6;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+    }
+
+    /* Header Styles */
+    header {
+      background-color: var(--primary-color);
+      color: var(--bg-color);
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 2rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+    }
+
+    nav ul li {
+      margin-left: 1rem;
+    }
+
+    nav ul li a {
+      color: var(--bg-color);
+      text-decoration: none;
+      padding: 0.5rem;
+      border-radius: 5px;
+      transition: var(--transition);
+    }
+
+    nav ul li a:hover {
+      background-color: var(--secondary-color);
+    }
+
+    /* Main Content Styles */
+    main {
+      max-width: 960px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background-color: var(--bg-color);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+    }
+
+    section {
+      margin-bottom: 2rem;
+      padding: 1rem;
+      background-color: var(--accent-color);
+      border-radius: 5px;
+      transition: var(--transition);
+    }
+
+    section:hover {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      transform: translateY(-5px);
+    }
+
+    section h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: var(--text-color);
+    }
+
+    /* Features Section */
+    .features {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .feature {
+      flex: 0 0 calc(50% - 1rem);
+      background-color: var(--bg-color);
+      padding: 1rem;
+      border-radius: 5px;
+      margin-bottom: 1rem;
+    }
+
+    .feature i {
+      font-size: 2rem;
+      color: var(--primary-color);
+      margin-bottom: 0.5rem;
+      display: block;
+    }
+
+    /* Testimonials Section */
+    .testimonials {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .testimonial {
+      flex: 0 0 calc(33% - 1rem);
+      background-color: var(--bg-color);
+      padding: 1rem;
+      border-radius: 5px;
+      margin-bottom: 1rem;
+    }
+
+    .testimonial p {
+      margin-bottom: 0.5rem;
+    }
+
+    /* Payment Option Styles */
+    #payment-option {
+      background-color: var(--accent-color);
+      padding: 1rem;
+      border-radius: 4px;
+    }
+
+    #payment-option h3 {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      color: var(--text-color);
+    }
+
+    #payment-option label {
+      display: block;
+      margin-bottom: 0.5rem;
+      color: var(--text-color);
+    }
+
+    #payment-option input[type="radio"] {
+      margin-right: 0.5rem;
+    }
+
+    #payment-option button {
+      background-color: var(--primary-color);
+      color: var(--bg-color);
+      border: none;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      transition: var(--transition);
+      margin-top: 1rem;
+      border-radius: 4px;
+    }
+
+    #payment-option button:hover {
+      background-color: var(--secondary-color);
+    }
+
+    /* Apply Button Styles */
+    .apply-button {
+      background-color: var(--primary-color);
+      color: var(--bg-color);
+      border: none;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      transition: var(--transition);
+      border-radius: 4px;
+    }
+
+    .apply-button:hover {
+      background-color: var(--secondary-color);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Kathak Dance Course</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Dashboard</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <img src="kathak.jpeg" alt="Kathak Dancer" style="max-width: 100%;">
+
+    <section>
+      <h2>About the Kathak Dance Course</h2>
+      <p>Our Kathak dance course is designed to teach students the art of Kathak, one of the eight classical Indian dance forms. Kathak is known for its intricate footwork, graceful movements, and expressive storytelling. Whether you're a beginner or have some experience, our expert instructors will guide you through the fundamentals and advanced techniques of Kathak dance.</p>
+    </section>
+
+    <section class="features">
+      <div class="feature">
+        <i class="fas fa-chalkboard-teacher"></i>
+        <h3>Expert Instructors</h3>
+        <p>Learn from experienced Kathak dancers who are passionate about teaching and preserving this beautiful art form.</p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-music"></i>
+        <h3>Live Music</h3>
+        <p>Experience the joy of dancing to live music played by talented musicians specializing in Indian classical music.</p>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <div class="testimonial">
+        <p>"Taking the Kathak course was a transformative experience for me. I learned not only the techniques but also the rich history and culture behind this beautiful dance form."</p>
+        <p>- Priya, Student</p>
+      </div>
+      <div class="testimonial">
+        <p>"The instructors are incredibly supportive and patient. They break down complex movements into manageable steps, making learning Kathak enjoyable and rewarding."</p>
+        <p>- Raj, Student</p>
+      </div>
+      <div class="testimonial">
+        <p>"I never thought I could learn Kathak at my age, but this course has made it possible. I'm grateful for the opportunity to explore this beautiful art form."</p>
+        <p>- Ananya, Student</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Attend a Demo Class</h2>
+      <p>Experience a glimpse of our Kathak dance course by attending a free demo class. Get a feel for the teaching style, meet our instructors, and discover the joy of Kathak dancing!</p>
+      <p>Register now to reserve your spot for the next demo class.</p>
+      <button class="apply-button">Register for Demo</button>
+    </section>
+
+    <section>
+      <h2>Payment Options</h2>
+      <div id="payment-option">
+        <h3>Choose your preferred payment method:</h3>
+        <label>
+          <input type="radio" name="payment-method" value="credit-card">
+          Credit Card
+        </label>
+        <label>
+          <input type="radio" name="payment-method" value="paypal">
+          PayPal
+        </label>
+        <button type="button">Enroll Now</button>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

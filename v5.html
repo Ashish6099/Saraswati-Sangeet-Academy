@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vocal Course</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    :root {
+      --primary-color: #4499d6;
+      --secondary-color: #FF7043;
+      --accent-color: #FFD54F;
+      --text-color: #333;
+      --bg-color: #F5F5F5;
+      --transition: 0.3s ease-in-out;
+    }
+
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body Styles */
+    body {
+      font-family: 'Montserrat', sans-serif;
+      line-height: 1.6;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+    }
+
+    /* Header Styles */
+    header {
+      background-color: var(--primary-color);
+      color: var(--bg-color);
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 2rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+    }
+
+    nav ul li {
+      margin-left: 1rem;
+    }
+
+    nav ul li a {
+      color: var(--bg-color);
+      text-decoration: none;
+      padding: 0.5rem;
+      border-radius: 5px;
+      transition: var(--transition);
+    }
+
+    nav ul li a:hover {
+      background-color: var(--secondary-color);
+    }
+
+    /* Main Content Styles */
+    main {
+      max-width: 960px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background-color: var(--bg-color);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+    }
+
+    section {
+      margin-bottom: 2rem;
+      padding: 2rem;
+      background-color: var(--accent-color);
+      border-radius: 20px;
+      transition: var(--transition);
+    }
+
+    section:hover {
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+      transform: translateY(-5px);
+    }
+
+    section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: var(--primary-color);
+      text-align: center;
+    }
+
+    /* Features Section */
+    .features {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .feature {
+      flex: 0 0 calc(50% - 1rem);
+      background-color: var(--bg-color);
+      padding: 1.5rem;
+      border-radius: 20px;
+      margin-bottom: 1rem;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      transition: var(--transition);
+    }
+
+    .feature:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .feature i {
+      font-size: 3rem;
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+      display: block;
+      text-align: center;
+    }
+
+    /* Testimonials Section */
+    .testimonials {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .testimonial {
+      flex: 0 0 calc(33% - 1rem);
+      background-color: var(--bg-color);
+      padding: 1.5rem;
+      border-radius: 20px;
+      margin-bottom: 1rem;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      transition: var(--transition);
+    }
+
+    .testimonial:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .testimonial p {
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    /* Demo Section */
+    .demo {
+      text-align: center;
+    }
+
+    .demo p {
+      margin-bottom: 1rem;
+    }
+     button {
+      background-color: var(--secondary-color);
+      color: var(--bg-color);
+      border: none;
+      padding: 1.5rem 3rem;
+      cursor: pointer;
+      transition: var(--transition);
+      border-radius: 20px;
+      font-size: 1.5rem;
+    }
+
+     button:hover {
+      background-color: var(--primary-color);
+    }
+
+    /* Payment Option Styles */
+    #payment-option {
+      background-color: var(--accent-color);
+      padding: 2rem;
+      border-radius: 20px;
+      text-align: center;
+    }
+
+    #payment-option h3 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: var(--primary-color);
+    }
+
+    #payment-option label {
+      display: block;
+      margin-bottom: 1rem;
+      color: var(--primary-color);
+      font-size: 1.5rem;
+    }
+
+    #payment-option input[type="radio"] {
+      margin-right: 0.5rem;
+    }
+
+    #payment-option button {
+      background-color: var(--secondary-color);
+      color: var(--bg-color);
+      border: none;
+      padding: 1.5rem 3rem;
+      cursor: pointer;
+      transition: var(--transition);
+      border-radius: 20px;
+      font-size: 1.5rem;
+    }
+
+    #payment-option button:hover {
+      background-color: var(--primary-color);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Vocal Course</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Dashboard</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <img src="vocal 1.png" alt="Vocal" style="max-width: 100%;">
+    <section>
+      <h2>About the Vocal Course</h2>
+      <p>Embark on a journey of self-expression and musical exploration with our Vocal Course. Our experienced instructors will guide you through vocal techniques, breathing exercises, and performance skills to help you find your unique voice.</p>
+    </section>
+
+    <section class="features">
+      <div class="feature">
+        <i class="fas fa-microphone-alt"></i>
+        <h3>Vocal Techniques</h3>
+        <p>Master the fundamentals of vocal technique, including breath control, pitch accuracy, and vocal resonance.</p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-music"></i>
+        <h3>Performance Skills</h3>
+        <p>Develop confidence and stage presence through performance workshops and live recitals.</p>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <div class="testimonial">
+        <p>"This vocal course has been transformative for me. The instructors are supportive and knowledgeable, and I've grown so much as a singer."</p>
+        <p>- Sarah, Student</p>
+      </div>
+      <div class="testimonial">
+        <p>"I never thought I could sing until I joined this course. The teachers helped me discover my voice and express myself through music."</p>
+        <p>- John, Student</p>
+      </div>
+      <div class="testimonial">
+        <p>"The vocal course offers a perfect balance of technical training and artistic expression. I've learned so much and enjoyed every moment."</p>
+        <p>- Emily, Student</p>
+      </div>
+    </section>
+
+    <section class="demo">
+      <h2>Attend a Demo Class</h2>
+      <p>Experience the joy of singing and discover what our vocal course has to offer by attending a free demo class. Unleash your creativity and find your voice!</p>
+      <p>Register now to reserve your spot for the next demo class.</p>
+      <button class="apply-button">Register for Demo</button>
+    </section>
+
+    <section id="payment-option">
+      <h2>Enroll Now</h2>
+      <p>Choose your preferred payment method and start your vocal journey today!</p>
+      <label>
+        <input type="radio" name="payment-method" value="credit-card">
+        Credit Card
+      </label>
+      <label>
+        <input type="radio" name="payment-method" value="paypal">
+        PayPal
+      </label>
+      <button type="button">Enroll Now</button>
+    </section>
+  </main>
+</body>
+</html>

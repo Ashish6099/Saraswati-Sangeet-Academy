@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saraswati Sangeet Academy</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+  <!-- Navigation Bar 1 -->
+
+  <nav class="navbar1">
+    <!-- Toggle Button -->
+    <button type="button" class="menu-toggle" onclick="toggleMenu('navbar1')" title="toggle Menu"><i
+        class="fas fa-bars"></i></button>
+    <!-- <div class="menu"> -->
+    <div class="menu" id="menu-navbar1">
+
+      <a href="#" class="close-menu" onclick="toggleMenu('navbar1')" style="display: none;"><i
+          class="fas fa-times"></i></a>
+      <a href="Admission _and _student.html"><i class="fas fa-user-graduate"></i> Admission&Students</a>
+      <a href="Examination.html"><i class="fas fa-clipboard-check"></i> Examination</a>
+      <a href="Affiliation.html"><i class="fas fa-university"></i> Affiliation</a>
+      <a href="Library.html"><i class="fas fa-book-open"></i> Library</a>
+      <a href="News.html"><i class="fas fa-newspaper"></i> University News</a>
+      <a href="Contact_Us.html"><i class="fas fa-envelope"></i> Contact Us</a>
+      <a href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a>
+    </div>
+
+
+    <!-- icons of top right  -->
+    <div class="rightside">
+
+      <div class="icons">
+        <a href="https://translate.google.co.in/" class="translate-icon" title="translate"><i
+            class="fas fa-language"></i></a>
+        <a href="https://www.facebook.com/saraswatimusicalclasses/" class="social-icon" title="facebook"><i
+            class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-twitter" title="twitter"></i></a>
+        <a href="https://www.instagram.com/saraswati_sangeet_academy?igsh=MzRlODBiNWFlZA== calendar" class="social-icon"
+          title="instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube" title="youtube"></i></a>
+
+      </div>
+
+      <input type="text" id="searchInput" placeholder="Search..." style="display: none;">
+    </div>
+  </nav>
+  </div>
+
+  <!-- Logos Section -->
+
+  <div class="logos-section">
+    <div class="logo1">
+      <a href="link_to_logo1_page.html">
+        <img src="Untitled_1.jpg" alt="Logo 1">
+      </a>
+      <p><b>Saraswati Sangeet Academy</p>
+    </div>
+    <div class="logo2">
+      <a href="link_to_logo2_page.html">
+        <img src="Sangeet _Sangeet _Academy _New_ Logo _Png.png" alt="Logo 2">
+      </a>
+      <a href="link_to_logo3_page.html">
+        <img src="Untitled_1.jpg" alt="Logo 3">
+      </a>
+    </div>
+
+  </div>
+
+
+  <!-- Navigation Bar 2 -->
+  <div class="container2">
+    <nav class="navbar2">
+      <button type="button" class="menu-toggle" onclick="toggleMenu('navbar2')" title="toggle Menu"><i
+          class="fas fa-bars"></i></button>
+      <div class="menu" id="menu-navbar2">
+        <!-- <span class="close" onclick="closemenu()">&times;</span> -->
+        <a href="#" class="close-menu" onclick="toggleMenu('navbar2')" style="display: none;"><i
+            class="fas fa-times"></i></a>
+
+        <a href="index.html"><i class="fas fa-home"></i> Home</a>
+        <a href="About _Us.html"><i class="fas fa-info-circle"></i> About Us</a>
+        <a href="Academics.html"><i class="fas fa-graduation-cap"></i> Academics</a>
+        <a href="Administration.html"><i class="fas fa-cogs"></i> Administration</a>
+        <a href="Publications.html"><i class="fas fa-book"></i> Publications</a>
+        <a href="Alumni.html"><i class="fas fa-user-friends"></i> Alumni</a>
+        <a href="Faculties.html"><i class="fas fa-user-tie"></i> Faculties</a>
+        <a href="Gallery.html"><i class="fas fa-images"></i> Gallery</a>
+        <a href="Awards.html"><i class="fas fa-trophy"></i> Awards</a>
+        <a href="Scholarship.html"><i class="fas fa-graduation-cap"></i> Scholarship</a>
+        <a href="Membership.html"><i class="fas fa-id-card"></i> Membership Card</a>
+        <a href="Donation.html"><i class="fas fa-donate"></i> Donation</a>
+
+    </nav>
+
+
+    <!-- Image Gallery -->
+    <div class="image-gallery">
+      <!-- Images and dots for dynamic slideshow -->
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="coverpage1.jpg" alt="#">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="coverpage2.jpg" alt="">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="coverpage3.jpg" alt="">
+        </div>
+        <div class="mySlides fade">
+          <img src="coverpage4.jpg" alt="">
+        </div>
+        <div class="mySlides fade">
+          <img src="coverpage5.jpg" alt="">
+        </div>
+        <div class="mySlides fade">
+          <img src="coverpage6.jpg" alt="">
+        </div>
+
+        <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
+      </div>
+      <br>
+
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- News Section -->
+  <div class="news-section">
+    <!-- News flashing -->
+    <p class="latest-update">Latest Update: </p>
+    <marquee behavior="scroll" direction="left">Big news: Our music academy is expanding with new facilities, courses,
+      and renowned faculty, reaffirming our commitment to excellence in music education. </marquee>
+  </div>
+  <br>
+  <!-- Important Links Section -->
+  <div class="container1">
+
+    <div class="Calendar">
+      <h2>Calendar</h2>
+      <div class="month">
+        <div class="month-header" id="monthHeader">
+          <!-- <span class="prev" onclick="prevMonth()">&#10094;</span> -->
+          <span class="prev" onclick="prevMonth()">&#10094;</span>
+          <span class="next" onclick="nextMonth()">&#10095;</span>
+          <span id="monthDisplay" onclick="showMonthDropdown()"></span>
+          <span id="yearDisplay" onclick="showYearDropdown()"></span>
+        </div>
+        <div id="monthDropdown" class="dropdown"></div>
+        <div id="yearDropdown" class="dropdown"></div>
+
+
+        <div class="days" id="daysContainer"></div>
+      </div>
+    </div>
+    <div id="eventPopup" class="popup">
+      <div class="popup-content">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <h3 id="popupDate"></h3>
+        <div id="eventDetails"></div>
+      </div>
+    </div>
+
+
+
+
+
+    <div class="main-content">
+      <nav class="navbar3">
+        <ul>
+          <a href="#">Notice</a>
+          <a href="#">Updates</a>
+          <a href="#">Downloads</a>
+          <a href="#">Syllabus</a>
+        </ul>
+
+
+      </nav>
+      <!-- Links to important pages -->
+
+      <div class="scrolling-links">
+
+        <a href="#">1. Enrollment Information: Find details on how to enroll in our music courses, including
+          registration and available programs.</a><br><br>
+        <a href="#">2. Events Calendar: Explore our events calendar to stay informed about upcoming performances,
+          recitals, workshops, and masterclasses.</a><br><br>
+        <a href="#">3. Student Resources: Access helpful resources such as practice tips, sheet music, learning
+          materials, and online tutorials to support your musical journey.</a><br><br>
+        <a href="#">4. Faculty Directory: Get to know our team of experienced instructors and learn about their
+          backgrounds, specialties, and teaching philosophies.</a><br><br>
+        <a href="#">5. Facilities: Discover our state-of-the-art facilities equipped with practice rooms, performance
+          spaces, recording studios, and more.</a><br><br>
+        <a href="#">6. Scholarship Opportunities: Explore available scholarship programs and financial aid options to
+          support your musical education. Learn about eligibility criteria, application deadlines, and how to
+          apply.</a><br><br>
+        <a href="#">7. Community Outreach: Discover how we engage with the community through outreach programs,
+          partnerships with schools, charity concerts, and other initiatives aimed at promoting music education and
+          appreciation.</a><br><br>
+        <a href="#">8. Performance Opportunities: Explore the various opportunities for students to showcase their
+          musical talents, including recitals, concerts, competitions, and community performances.</a>
+
+      </div>
+
+      <a href="#">Click here for more>> </a>
+    </div>
+
+
+  </div>
+  <br>
+  <div class="container">
+    <div class="navbar">
+      <a href="#" onclick="showContent('photo-gallery')">Photo Gallery</a>
+      <a href="#" onclick="showContent('video-gallery')">Video Gallery</a>
+      <a href="#" onclick="showContent('news-clips')">News Clips</a>
+      <a href="#" onclick="showContent('rang-mandal')">Rang Mandal</a>
+
+    </div>
+    <div id="content-container">
+      <div id="photo-gallery" class="content active">
+        <div class="slider">
+          <div class="slide">
+            <div class="image-box">
+              <img src="image1.jpg" alt="Image 1">
+            </div>
+          </div>
+          <div class="slide">
+            <div class="image-box">
+              <img src="image2.jpg" alt="Image 2">
+            </div>
+          </div>
+          <div class="slide">
+            <div class="image-box">
+              <img src="image3.jpg" alt="Image 3">
+            </div>
+          </div>
+          <div class="slide">
+            <div class="image-box">
+              <img src="image4.jpg" alt="Image 4">
+            </div>
+          </div>
+          <div class="slide">
+            <div class="image-box">
+              <img src="image5.jpg" alt="Image 5">
+            </div>
+          </div>
+
+          <!-- Add more slides as needed -->
+        </div>
+        <a href="Gallery.html" class="see-more">See More <i class="fas fa-chevron-right"></i></a>
+        <!-- <button class="arrow left-arrow">&#10094;</button>
+            <button class="arrow right-arrow">&#10095;</button> -->
+      </div>
+
+      <div id="video-gallery" class="content">
+        <div class="video-container">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/video1" frameborder="0"
+            allowfullscreen></iframe>
+        </div>
+        <div class="video-container">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/video2" frameborder="0"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+      <div id="news-clips" class="content">
+        <div class="news-clip">
+          <h2>News Clip 1</h2>
+          <p>Description of News Clip 1.</p>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/newsclip1" frameborder="0"
+            allowfullscreen></iframe>
+        </div>
+
+        <!-- News Clip 2 -->
+        <div class="news-clip">
+          <div class="image">
+            <img src=" news-image1.jpg" alt="Image ">
+          </div>
+          <h2>News Clip 2</h2>
+          <p>Description of News Clip 2.</p>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/newsclip2" frameborder="0"
+            allowfullscreen></iframe>
+        </div>
+
+        <div class="image">
+          <img src="news-image2.jpg" alt="Image 2">
+        </div>
+        <!-- Add more news clips as needed -->
+      </div>
+      <div id="rang-mandal" class="content">
+        <div class="rang-mandal">
+          <h2>Rang Mandal 1</h2>
+          <p>Description of Rang Mandal 1.</p>
+          <img src="rangmandal1.jpg" alt="Rang Mandal 1">
+        </div>
+
+
+        <!-- Rang Mandal 2 -->
+        <div class="rang-mandal">
+          <h2>Rang Mandal 2</h2>
+          <p>Description of Rang Mandal 2.</p>
+          <img src="rangmandal2.jpg" alt="Rang Mandal 2">
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <br>
+  <div class="banner">
+    <div class="item">
+      <a href="login.html">
+        <img src="student.png" alt="Student"></a>
+      <h3> Enrolled </h3>
+      <p>100</p>
+    </div>
+    <div class="item">
+      <a href="Faculties.html">
+        <img src="faculty.png" alt="Faculty"></a>
+      <h3>Faculty</h3>
+      <p>10</p>
+    </div>
+    <div class="item">
+      <a href="course.html" class="btn">
+        <img src="course.jpeg" alt="Course"></a>
+      <h3>Courses</h3>
+      <p>15</p>
+    </div>
+    <div class="item">
+      <a href="Alumni.html">
+        <img src="alumni.jpeg" alt="Alumni"></a>
+      <h3>Alumni</h3>
+      <p>50</p>
+    </div>
+  </div>
+  <div class="center-container">
+
+    <div class="instrumental">
+      <div class="details">
+        <a href="guitar.html">
+          <img src="guitar.png" alt="Instrument courses" class="instrumental"></a>
+        <h3>Guitar </h3>
+      </div>
+
+      <div class="details">
+        <a href="tabla.html">
+          <img src="tabla.png" alt="Instrument courses" class="instrumental"></a>
+        <h3>Tabla </h3>
+      </div>
+
+      <div class="details">
+        <a href="piano.html">
+          <img src="piano.jpeg" alt="Instrument courses" class="instrumental"></a>
+        <h3>Piano </h3>
+      </div>
+
+      <div class="details">
+        <a href="flute.html">
+          <img src="flute.png" alt="Instrument courses" class="instrumental"></a>
+        <h3>flute</h3>
+      </div>
+
+      <div class="details">
+        <a href="harmonium.html">
+          <img src="harmonium.jpeg" alt="Instrument courses" class="instrumental"></a>
+        <h3>Harmonium </h3>
+      </div>
+    </div>
+    <br><br>
+
+
+
+
+
+    <div class="vocal">
+      <div class="details">
+        <a href="v1.html">
+          <img src="vocal 1.png" alt="Vocal courses" class="vocal"></a>
+        <h3>Vocal Course</h3>
+      </div>
+
+      <div class="details">
+        <a href="v2.html">
+          <img src="vocal 2.jpeg" alt="Vocal courses" class="vocal"></a>
+        <h3>Vocal Course</h3>
+      </div>
+
+      <div class="details">
+        <a href="v3.html">
+          <img src="vocal 3.jpeg" alt="Vocal courses" class="vocal"></a>
+        <h3>Vocal Course</h3>
+      </div>
+
+      <div class="details">
+        <a href="v4.html">
+          <img src="vocal 4.png" alt="Vocal courses" class="vocal"></a>
+        <h3>Vocal Course</h3>
+      </div>
+
+      <div class="details">
+        <a href="v5.html">
+          <img src="vocal 5.png" alt="Vocal courses" class="vocal"></a>
+        <h3>Vocal Course</h3>
+      </div>
+    </div>
+    <br><br>
+
+
+    <div class="dancing">
+      <div class="details">
+        <a href="bharatanatyam.html">
+          <img src="bharatanatyam.jpeg" alt="Dancing courses" class="dancing"></a>
+        <h3>Bharatanatyam</h3>
+      </div>
+
+      <div class="details">
+        <a href="kathak.html">
+          <img src="kathak.jpeg" alt="Dancing courses" class="dancing"></a>
+        <h3>Kathak</h3>
+      </div>
+
+      <div class="details">
+        <a href="kathakali.html">
+          <img src="kathakali.jpeg" alt="Dancing courses" class="dancing"></a>
+        <h3>Kathakali</h3>
+      </div>
+
+      <div class="details">
+        <a href="kuchipudi.html">
+          <img src="kuchipudi.jpeg" alt="Dancing courses" class="dancing"></a>
+        <h3>Kuchipudi</h3>
+      </div>
+
+      <div class="details">
+        <a href="mohiniyattam.html">
+          <img src="mohiniyattam.jpeg" alt="Dancing courses" class="dancing"></a>
+        <h3>Mohiniyattam</h3>
+      </div>
+    </div>
+
+  </div>
+
+  <br>
+
+  <!-- Quick Links and Contact Us -->
+  <div class="bottom-section">
+    <div class="content-wrapper">
+      <!-- Quick Links -->
+      <div class="quick-links">
+        <div class="quick-links-header">
+          <h2>Quick Links
+            <hr>
+          </h2>
+
+        </div>
+        <div class="quick-links-content">
+          <div id="A">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#">Courses</a></li>
+              <li><a href="Awards.html">Awards</a></li>
+              <li><a href="#">Events</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="Contact_Us.html">Contact</a></li>
+            </ul>
+          </div>
+          <div id="B">
+            <ul>
+              <li><a href="index.html">Faculty</a></li>
+              <li><a href="Admission _and _student.html">Admission</a></li>
+              <li><a href="Faculties.html">Instructors</a></li>
+              <li><a href="News.html">News</a></li>
+              <li><a href="Gallery.html">Gallery</a></li>
+              <li><a href="Contact_Us.html">Alumni</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <br>
+      <!-- Social Media Links -->
+      <div class="social-media">
+        <h2>Follow Us
+          <hr>
+        </h2>
+
+        <ul>
+          <li><a href="https://www.facebook.com/saraswatimusicalclasses/"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="https://www.instagram.com/saraswati_sangeet_academy?igsh=MzRlODBiNWFlZA== calendar"><i
+                class="fab fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+          <li><a href="mailto:shritabla22@gmail.com"><i class="far fa-envelope"></i></a></li>
+          <li><a href="tel:+919839092023"><i class="fas fa-phone"></i></a></li>
+
+
+        </ul>
+        <hr>
+      </div>
+
+      <!-- Map Location -->
+      <div class="map">
+        <h2>Map Location</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d113971.57915167876!2d80.8472943!3d26.7886401!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399be3dcfd0d453f%3A0x92adb5c6b8470f5b!2sSaraswati%20Sangeet%20Academy!5e0!3m2!1sen!2sin!4v1717242842364!5m2!1sen!2sin"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+  <footer class="copyright">
+    <p class="footer-text">&copy; saraswati sangeet academy. All rights reserved. </p>
+    <p class="footer-design">Design by Ashish Rauniyar</p>
+  </footer>
+
+
+  <script src="script.js"></script>
+
+
+</body>
+
+</html>

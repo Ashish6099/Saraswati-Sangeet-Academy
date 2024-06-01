@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> User Registration</title>
+<style>
+        /* Basic styling for registration form */
+body{
+
+    background-color: #f0f0f0; /* Light gray background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.container {
+    width: 40%;
+    margin-left: 100px;
+    margin: 50px auto;
+    padding: 20px;
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Example linear gradient */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: fadeIn 1s ease-in-out; /* Fade in animation */
+}
+  /* Styling for the animated image */
+  .animated-image {
+            position: absolute;
+            top: 50%;
+            left: 15%;
+            transform: translateY(-50%);
+            width: 200px; /* Adjust width as needed */
+            height: 50%;
+            /* animation: slideInTop 1s ease-in-out; Slide in from left animation */
+        }
+
+        /* Keyframes for fade-in animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Keyframes for slide-in-from-left animation */
+        @keyframes slideInLeft {
+            from {
+                transform: translateX(-100%);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+
+h2 {
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50; /* Green background color */
+    color: white; /* White text color */
+    border: none; /* No border */
+    padding: 12px 24px; /* Padding for the button */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+    font-family: Arial, sans-serif; /* Font family */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Font weight */
+    cursor: pointer; /* Cursor style */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Styling for congratulation popup */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    appearance: top;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 1000;
+}
+
+.popup-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+    </style>
+</head>
+
+<!-- BODY STARTS HERE -->
+
+<body>
+    <!-- Animated Image -->
+    <img class="animated-image" src="register.gif" alt="Animated Image">
+     <!-- Registration Form -->
+     <div class="container">
+        <h2> User Registration</h2>
+        <form id="register" method="POST" action="login.html">
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Password" required>
+            <input type="password" placeholder="Confirm Password" required>
+            <input type="tel" placeholder="Phone Number" required>
+            <button type="submit" >Submit</button>
+        </form>
+    </div>
+     <!-- Congratulation Popup -->
+     <div id="congratulationPopup" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <p>Congratulations! You have successfully registered.</p>
+        </div>
+    </div>
+<script>
+        // Get the registration form
+const register = document.getElementById('register');
+
+// Add event listener for form submission
+register.addEventListener('submit', function(event) {
+    // Prevent form submission
+    event.preventDefault();
+    
+    // Show congratulation popup
+    showCongratulationPopup();
+
+      // Redirect to login page after 4 seconds
+    // setTimeout(function() {
+    //          window.location.href = register.action;
+    //      }, 4000);
+});
+
+// Function to show congratulation popup
+function showCongratulationPopup() {
+    const congratsPopup = document.getElementById('congratulationPopup');
+    congratsPopup.style.display = 'block';
+
+    // Add event listener to close the popup when close button is clicked
+    const closeBtn = document.querySelector('.close');
+    closeBtn.addEventListener('click', function() {
+        congratsPopup.style.display = 'none';
+    });
+}
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  
+
+  <title>Guitar Course</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    :root {
+      --primary-color: #8B4513; /* SaddleBrown */
+      --secondary-color: #A0522D; /* Sienna */
+      --accent-color: #D2B48C; /* Tan */
+      --text-color: #333;
+      --bg-color: #FFF8DC; /* Cornsilk */
+      --transition: 0.3s ease-in-out;
+    }
+
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body Styles */
+    body {
+      font-family: 'Open Sans', sans-serif;
+      line-height: 1.6;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+    }
+
+    /* Header Styles */
+    header {
+      background-color: var(--primary-color);
+      color: var(--bg-color);
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 2rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+    }
+
+    nav ul li {
+      margin-left: 1rem;
+    }
+
+    nav ul li a {
+      color: var(--bg-color);
+      text-decoration: none;
+      padding: 0.5rem;
+      border-radius: 5px;
+      transition: var(--transition);
+    }
+
+    nav ul li a:hover {
+      background-color: var(--secondary-color);
+    }
+
+    /* Main Content Styles */
+    main {
+      max-width: 960px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background-color: var(--bg-color);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+    }
+
+    section {
+      margin-bottom: 2rem;
+      padding: 1rem;
+      background-color: var(--accent-color);
+      border-radius: 5px;
+      transition: var(--transition);
+    }
+
+    section:hover {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      transform: translateY(-5px);
+    }
+
+    section h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: var(--text-color);
+    }
+
+    #teacher-info img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+    }
+
+    #class-demo video {
+      width: 100%;
+      max-width: 800px;
+      border-radius: 8px;
+    }
+
+    #course-progress li {
+      margin-bottom: 0.5rem;
+    }
+
+    footer {
+      background-color: var(--primary-color);
+      color: var(--bg-color);
+      text-align: center;
+      padding: 1rem;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav ul {
+        flex-direction: column;
+        margin-top: 1rem;
+      }
+
+      nav ul li {
+        margin-left: 0;
+        margin-bottom: 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Guitar Course</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="#"><i class="fas fa-dashboard"></i> Dashboard </a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <img src="guitar.png" alt="Guitar Player" style="max-width: 100%;">
+
+    <section>
+      <h2>About the Guitar Course</h2>
+      <p>Our guitar course is designed to teach students the art of playing the guitar, one of the most popular and versatile instruments in the world. Whether you're a beginner or have some experience, our expert instructors will guide you through the fundamentals and advanced techniques of guitar playing.</p>
+    </section>
+
+    <section>
+      <h2>Course Details</h2>
+      <p>In our guitar course, you'll learn:</p>
+      <ul>
+        <li>Proper posture and hand positioning</li>
+        <li>Chord progressions and strumming patterns</li>
+        <li>Reading guitar tabs and musical notation</li>
+        <li>Rhythm and timing</li>
+        <li>Scales and arpeggios</li>
+        <li>Improvisation and expression</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Demo Classes</h2>
+      <p>We offer free demo classes every weekend for those interested in trying out our guitar course. These classes provide a glimpse into our teaching methods and allow you to experience the joy of playing the guitar firsthand.</p>
+      <p>Registration is required due to limited availability. Contact us to reserve your spot for the demo classes.</p>
+    </section>
+
+    <section>
+      <h2>Meet Your Instructor</h2>
+      <div id="teacher-info">
+        <img src="teacher.jpg" alt="Teacher Profile Picture">
+        <div>
+          <h3>John Doe</h3>
+          <p>John Doe is a professional guitarist with over 10 years of teaching experience. He has performed with various bands and has a passion for sharing his knowledge with aspiring guitarists.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Sample Class</h2>
+      <div id="class-demo">
+        <video controls>
+          <source src="sample-class.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </section>
+
+    <section>
+      <h2>Fee Structure</h2>
+      <ul>
+        <li><i class="fas fa-dollar-sign"></i> Course Fee: $199</li>
+        <li><i class="fas fa-credit-card"></i> Payment Options:
+          <ul>
+            <li>One-time payment</li>
+            <li>Monthly installments</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Course Progress</h2>
+      <p>Track your progress and view completed lessons.</p>
+      <ul id="course-progress">
+        <li>Lesson 1: Introduction to Guitar
+          <progress value="100" max="100"></progress>
+        </li>
+        <li>Lesson 2: Basic Chords
+          <progress value="50" max="100"></progress>
+        </li>
+        <!-- Add more lessons here -->
+      </ul>
+    </section>
+  </main>
+
+ 
+</body>

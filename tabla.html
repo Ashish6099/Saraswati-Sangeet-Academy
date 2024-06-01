@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabla Course</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    :root {
+      --primary-color: #4CAF50;
+      --secondary-color: #FFC107;
+      --accent-color: #2196F3;
+      --text-color: #333;
+      --bg-color: #F3E5F5;
+      --transition: 0.3s ease-in-out;
+    }
+
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body Styles */
+    body {
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.6;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+    }
+
+    /* Header Styles */
+    header {
+      background-color: var(--primary-color);
+      color: var(--bg-color);
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 2rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+    }
+
+    nav ul li {
+      margin-left: 1rem;
+    }
+
+    nav ul li a {
+      color: var(--bg-color);
+      text-decoration: none;
+      padding: 0.5rem;
+      border-radius: 5px;
+      transition: var(--transition);
+    }
+
+    nav ul li a:hover {
+      background-color: var(--secondary-color);
+    }
+
+    /* Main Content Styles */
+    main {
+      max-width: 960px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background-color: var(--bg-color);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+    }
+
+    section {
+      margin-bottom: 2rem;
+      padding: 2rem;
+      background-color: var(--accent-color);
+      border-radius: 10px;
+      transition: var(--transition);
+    }
+
+    section:hover {
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+      transform: translateY(-5px);
+    }
+
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: var(--text-color);
+      text-align: center;
+    }
+
+    /* Features Section */
+    .features {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .feature {
+      flex: 0 0 calc(50% - 1rem);
+      background-color: var(--bg-color);
+      padding: 1.5rem;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      transition: var(--transition);
+    }
+
+    .feature:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .feature i {
+      font-size: 3rem;
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+      display: block;
+      text-align: center;
+    }
+
+    /* Testimonials Section */
+    .testimonials {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .testimonial {
+      flex: 0 0 calc(33% - 1rem);
+      background-color: var(--bg-color);
+      padding: 1.5rem;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      transition: var(--transition);
+    }
+
+    .testimonial:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .testimonial p {
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    /* Demo Section */
+    .demo {
+      text-align: center;
+    }
+
+    .demo p {
+      margin-bottom: 1rem;
+    }
+    
+     button {
+      background-color: var(--primary-color);
+      color: var(--bg-color);
+      border: none;
+      padding: 1rem 2rem;
+      cursor: pointer;
+      transition: var(--transition);
+      border-radius: 10px;
+      font-size: 1.2rem;
+    }
+
+     button:hover {
+      background-color: var(--secondary-color);
+    }
+
+    /* Payment Option Styles */
+    #payment-option {
+      background-color: var(--accent-color);
+      padding: 2rem;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    #payment-option h3 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: var(--text-color);
+    }
+
+    #payment-option label {
+      display: block;
+      margin-bottom: 1rem;
+      color: var(--text-color);
+      font-size: 1.2rem;
+    }
+
+    #payment-option input[type="radio"] {
+      margin-right: 0.5rem;
+    }
+
+    #payment-option button {
+      background-color: var(--primary-color);
+      color: var(--bg-color);
+      border: none;
+      padding: 1rem 2rem;
+      cursor: pointer;
+      transition: var(--transition);
+      border-radius: 10px;
+      font-size: 1.2rem;
+    }
+
+    #payment-option button:hover {
+      background-color: var(--secondary-color);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Tabla Course</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Dashboard</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <img src="tabla.png" alt="Tabla" style="max-width: 100%;">
+    <section>
+      <h2>About the Tabla Course</h2>
+      <p>Discover the rhythms of Indian classical music with our Tabla Course. Learn the fundamentals of tabla playing, from basic strokes to complex compositions, under the guidance of experienced tabla maestros.</p>
+    </section>
+
+    <section class="features">
+      <div class="feature">
+        <i class="fas fa-chalkboard-teacher"></i>
+        <h3>Expert Instructors</h3>
+        <p>Learn from renowned tabla players who have dedicated their lives to mastering this intricate percussion instrument.</p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-music"></i>
+        <h3>Rhythmic Training</h3>
+        <p>Develop your sense of rhythm and timing through structured exercises and rhythmic patterns tailored to your skill level.</p>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <div class="testimonial">
+        <p>"Taking this tabla course has been an enriching experience. I've learned so much about the art and culture of Indian music."</p>
+        <p>- Raj, Student</p>
+      </div>
+      <div class="testimonial">
+        <p>"The instructors are incredibly knowledgeable and supportive. They provide valuable feedback to help improve your playing."</p>
+        <p>- Priya, Student</p>
+      </div>
+      <div class="testimonial">
+        <p>"Learning tabla has opened up a new world of musical expression for me. I'm grateful for the opportunity to study this beautiful instrument."</p>
+        <p>- Anand, Student</p>
+      </div>
+    </section>
+
+    <section class="demo">
+      <h2>Attend a Demo Class</h2>
+      <p>Experience the rhythms of tabla firsthand by attending a free demo class. Discover the beauty and complexity of this traditional percussion instrument.</p>
+      <p>Register now to reserve your spot for the next demo class.</p>
+      <button class="apply-button">Register for Demo</button>
+    </section>
+
+    <section id="payment-option">
+      <h2>Enroll Now</h2>
+      <p>Choose your preferred payment method and start your tabla journey today!</p>
+      <label>
+        <input type="radio" name="payment-method" value="credit-card">
+        Credit Card
+      </label>
+      <label>
+        <input type="radio" name="payment-method" value="paypal">
+        PayPal
+      </label>
+      <button type="button">Enroll Now</button>
+    </section>
+  </main>
+</body>
+</html>

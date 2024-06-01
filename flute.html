@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flute Course</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    :root {
+      --primary-color: #6495ED;
+      --secondary-color: #4169E1;
+      --accent-color: #87CEFA;
+      --text-color: #333;
+      --bg-color: #fff;
+      --transition: 0.3s ease-in-out;
+    }
+
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body Styles */
+    body {
+      font-family: 'Open Sans', sans-serif;
+      line-height: 1.6;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+    }
+
+    /* Header Styles */
+    header {
+      background-color: var(--primary-color);
+      color: var(--bg-color);
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 2rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+    }
+
+    nav ul li {
+      margin-left: 1rem;
+    }
+
+    nav ul li a {
+      color: var(--bg-color);
+      text-decoration: none;
+      padding: 0.5rem;
+      border-radius: 5px;
+      transition: var(--transition);
+    }
+
+    nav ul li a:hover {
+      background-color: var(--secondary-color);
+    }
+
+    /* Main Content Styles */
+    main {
+      max-width: 960px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background-color: var(--bg-color);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+    }
+
+    section {
+      margin-bottom: 2rem;
+      padding: 1rem;
+      background-color: var(--accent-color);
+      border-radius: 5px;
+      transition: var(--transition);
+    }
+
+    section:hover {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      transform: translateY(-5px);
+    }
+
+    section h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: var(--text-color);
+    }
+
+    /* Payment Option Styles */
+    #payment-option {
+      background-color: var(--accent-color);
+      padding: 1rem;
+      border-radius: 4px;
+    }
+
+    #payment-option h3 {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      color: var(--text-color);
+    }
+
+    #payment-option label {
+      display: block;
+      margin-bottom: 0.5rem;
+      color: var(--text-color);
+    }
+
+    #payment-option input[type="radio"] {
+      margin-right: 0.5rem;
+    }
+
+    #payment-option button {
+      background-color: var(--primary-color);
+      color: var(--bg-color);
+      border: none;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      transition: var(--transition);
+      margin-top: 1rem;
+      border-radius: 4px;
+    }
+
+    #payment-option button:hover {
+      background-color: var(--secondary-color);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Flute Course</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Dashboard</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <img src="flute.png" alt="Flute Player" style="max-width: 25%;align-items: center;">
+
+    <section>
+      <h2>About the Flute Course</h2>
+      <p>Our flute course is designed to teach students the art of playing the flute, one of the most versatile and melodic instruments in the world. Whether you're a beginner or have some experience, our expert instructors will guide you through the fundamentals and advanced techniques of flute playing.</p>
+    </section>
+
+    <section>
+      <h2>Course Details</h2>
+      <p>In our flute course, you'll learn:</p>
+      <ul>
+        <li>Proper posture and embouchure</li>
+        <li>Fingering techniques</li>
+        <li>Reading musical notation</li>
+        <li>Rhythm and timing</li>
+        <li>Scales and arpeggios</li>
+        <li>Improvisation and expression</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Demo Classes</h2>
+      <p>We offer free demo classes every weekend for those interested in trying out our flute course. These classes provide a glimpse into our teaching methods and allow you to experience the joy of playing the flute firsthand.</p>
+      <p>Registration is required due to limited availability. Contact us to reserve your spot for the demo classes.</p>
+    </section>
+
+    <section>
+      <h2>Payment Option</h2>
+      <div id="payment-option">
+        <h3>Choose your preferred payment method:</h3>
+        <label>
+          <input type="radio" name="payment-method" value="credit-card">
+          Credit Card
+        </label>
+        <label>
+          <input type="radio" name="payment-method" value="paypal">
+          PayPal
+        </label>
+        <button type="button">Buy Course</button>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

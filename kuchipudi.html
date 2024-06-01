@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kuchipudi Dance Course</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    :root {
+      --primary-color: #d07559;
+      --secondary-color: #E64A19;
+      --accent-color: #ffe065bb;
+      --text-color: #333;
+      --bg-color: #FBE9E7;
+      --transition: 0.3s ease-in-out;
+    }
+
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body Styles */
+    body {
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.6;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+    }
+
+    /* Header Styles */
+    header {
+      background-color: var(--primary-color);
+      color: var(--bg-color);
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 2rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+    }
+
+    nav ul li {
+      margin-left: 1rem;
+    }
+
+    nav ul li a {
+      color: var(--bg-color);
+      text-decoration: none;
+      padding: 0.5rem;
+      border-radius: 5px;
+      transition: var(--transition);
+    }
+
+    nav ul li a:hover {
+      background-color: var(--secondary-color);
+    }
+
+    /* Main Content Styles */
+    main {
+      max-width: 960px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background-color: var(--bg-color);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+    }
+
+    section {
+      margin-bottom: 2rem;
+      padding: 2rem;
+      background-color: var(--accent-color);
+      border-radius: 10px;
+      transition: var(--transition);
+    }
+
+    section:hover {
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+      transform: translateY(-5px);
+    }
+
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: var(--text-color);
+      text-align: center;
+    }
+
+    /* Features Section */
+    .features {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .feature {
+      flex: 0 0 calc(50% - 1rem);
+      background-color: var(--bg-color);
+      padding: 1.5rem;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      transition: var(--transition);
+    }
+
+    .feature:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .feature i {
+      font-size: 3rem;
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+      display: block;
+      text-align: center;
+    }
+
+    /* Testimonials Section */
+    .testimonials {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .testimonial {
+      flex: 0 0 calc(33% - 1rem);
+      background-color: var(--bg-color);
+      padding: 1.5rem;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      transition: var(--transition);
+    }
+
+    .testimonial:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .testimonial p {
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    /* Demo Section */
+    .demo {
+      text-align: center;
+    }
+
+    .demo p {
+      margin-bottom: 1rem;
+    }
+     button {
+      background-color: var(--primary-color);
+      color: var(--bg-color);
+      border: none;
+      padding: 1rem 2rem;
+      cursor: pointer;
+      transition: var(--transition);
+      border-radius: 10px;
+      font-size: 1.2rem;
+    }
+
+     button:hover {
+      background-color: var(--secondary-color);
+    }
+
+    /* Payment Option Styles */
+    #payment-option {
+      background-color: var(--accent-color);
+      padding: 2rem;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    #payment-option h3 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: var(--text-color);
+    }
+
+    #payment-option label {
+      display: block;
+      margin-bottom: 1rem;
+      color: var(--text-color);
+      font-size: 1.2rem;
+    }
+
+    #payment-option input[type="radio"] {
+      margin-right: 0.5rem;
+    }
+
+    #payment-option button {
+      background-color: var(--primary-color);
+      color: var(--bg-color);
+      border: none;
+      padding: 1rem 2rem;
+      cursor: pointer;
+      transition: var(--transition);
+      border-radius: 10px;
+      font-size: 1.2rem;
+    }
+
+    #payment-option button:hover {
+      background-color: var(--secondary-color);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Kuchipudi Dance Course</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Dashboard</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <img src="kuchipudi.jpeg" alt="kuchipudi" style="max-width: 100%;">
+    <section>
+      <h2>About the Kuchipudi Dance Course</h2>
+      <p>Experience the grace and elegance of Kuchipudi, a classical dance form originating from the Indian state of Andhra Pradesh. Our Kuchipudi dance course celebrates the traditional artistry of this ancient dance style while incorporating modern techniques and interpretations.</p>
+    </section>
+
+    <section class="features">
+      <div class="feature">
+        <i class="fas fa-chalkboard-teacher"></i>
+        <h3>Expert Instructors</h3>
+        <p>Learn from highly skilled Kuchipudi dancers who are passionate about preserving and promoting this cultural heritage.</p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-theater-masks"></i>
+        <h3>Expressive Movements</h3>
+        <p>Master the art of storytelling through expressive facial expressions, graceful hand gestures, and intricate footwork.</p>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <div class="testimonial">
+        <p>"Studying Kuchipudi has been a transformative experience for me. The beauty and depth of this dance form have enriched my life in countless ways."</p>
+        <p>- Maya, Student</p>
+      </div>
+      <div class="testimonial">
+        <p>"The instructors are not only talented dancers but also exceptional teachers. They guide you through each movement with patience and precision."</p>
+        <p>- Arjun, Student</p>
+      </div>
+      <div class="testimonial">
+        <p>"Kuchipudi has taught me the importance of discipline, dedication, and cultural appreciation. I am grateful for the opportunity to learn and grow through this art form."</p>
+        <p>- Aisha, Student</p>
+      </div>
+    </section>
+
+    <section class="demo">
+      <h2>Attend a Demo Class</h2>
+      <p>Experience the magic of Kuchipudi firsthand by attending a free demo class. Immerse yourself in the beauty of this classical dance form and discover the joy of expression through movement.</p>
+      <p>Register now to reserve your spot for the next demo class.</p>
+      <button class="apply-button">Register for Demo</button>
+    </section>
+
+    <section id="payment-option">
+      <h2>Enroll Now</h2>
+      <p>Choose your preferred payment method and start your Kuchipudi journey today!</p>
+      <label>
+        <input type="radio" name="payment-method" value="credit-card">
+        Credit Card
+      </label>
+      <label>
+        <input type="radio" name="payment-method" value="paypal">
+        PayPal
+      </label>
+      <button type="button">Enroll Now</button>
+    </section>
+  </main>
+</body>
+</html>

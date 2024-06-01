@@ -1,0 +1,1254 @@
+/* Your desktop styles here */
+
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+
+
+/* Navigation Bar 1 */
+.navbar1 {
+  background-color: #428cf4;
+  overflow: hidden;
+
+  top: 0;
+  left: 0;
+  height: auto;
+  width: 100%;
+  /* cursor: pointer;
+        border-right: 1px solid #ccc; Add a right border */
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  box-sizing: border-box;
+  /* Include padding in the element's total width */
+
+
+
+}
+
+/* Toggle Button */
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  padding: 10px;
+  color: white;
+}
+
+/* Navigation Links */
+.navbar1 .menu {
+  display: flex;
+  align-items: center;
+}
+
+.navbar1 .menu.open {
+  display: block;
+  position: absolute;
+  top: 60px;
+  /* Adjust based on navbar1 height */
+  left: 0;
+  width: 100%;
+  background-color: #428cf4;
+  padding: 10px;
+  /* z-index: 400;Ensure the menu appears on top */
+}
+
+
+*/ .menu {
+  display: flex;
+  display: inline-block;
+
+  position: absolute;
+  top: 50px;
+  left: 0;
+  background-color: #333;
+  width: 100%;
+  /* z-index: 200; */
+  padding: 40px;
+}
+
+.menu a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  /* margin-left: 5%; */
+}
+
+.close-menu {
+  text-align: right;
+  cursor: pointer;
+}
+
+
+
+
+.rightside {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  color: #333;
+  padding-top: 0%;
+
+
+
+}
+
+
+.icons {
+  display: flex;
+  align-items: right;
+  /* margin-right: 0px; */
+  color: #333;
+}
+
+.icons a {
+  /* color: white; */
+  display: inline-block;
+  margin-right: 10px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #333;
+}
+
+.icons a:last-child {
+  margin-right: 0px;
+}
+
+
+
+
+
+
+
+.navbar1 a menu {
+
+  padding: 14px 16px;
+  transition: background-color 0.3s ease;
+  display: block;
+  color: white;
+  display: inline-block;
+  text-align: justify;
+
+  margin: 0 0;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+  border-right: 1px solid #ccc;
+  /* Add a right border */
+}
+
+
+.navbar1 a:hover {
+  background-color: #7def82;
+  /* Change background color on hover */
+}
+
+
+
+
+
+/* Logos Section */
+
+
+.logos-section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: auto;
+  /* background-color: #e8e4e4; */
+  /* margin-top: 10px; */
+  width: 100%;
+  /* Add width: 100% to prevent overflow */
+  box-sizing: border-box;
+  /* Include padding in the element's total width */
+}
+
+.logo1,
+.logo2 {
+  display: flex;
+  align-items: center;
+  margin: 0 5px;
+}
+
+.logo1 img,
+.logo2 img {
+  max-width: 90px;
+  height: auto;
+
+}
+
+/* Styling for the paragraph */
+.logo1 p {
+  font-family: 'Times New Roman', Times, serif, sans-serif;
+  font-size: 20px;
+
+
+  font-style: italic;
+  color: #333;
+  margin-top: 10px;
+  /* Adjust spacing as needed */
+  transition: color 0.3s ease;
+  /* Smooth color transition */
+  position: relative;
+  /* Required for the animation */
+  overflow: hidden;
+  /* Ensures overflow content is hidden */
+}
+
+/* whatsapp and telegram  */
+
+
+.container2 {
+  /* display: flex; */
+  justify-content: space-between;
+  /* Align items from the start and end edges */
+  flex-direction: column;
+  /* Arrange items vertically */
+  align-items: center;
+  /* Align items vertically in the center */
+  margin-left: 200px;
+  /* Adjust left margin */
+  margin-right: 200px;
+  /* Adjust right margin */
+}
+
+
+/* Navigation Bar 2 */
+.navbar2 {
+  background-color: #333;
+  color: white;
+  border-radius: 5px;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+  /* Align navbar items in the center */
+  /* flex: 1; Allow navbar to grow and shrink as needed */
+}
+
+
+
+.navbar2 a {
+
+  padding: 14px 16px;
+  transition: background-color 0.3s ease;
+  display: block;
+  color: white;
+  display: inline-block;
+  text-align: justify;
+  /* margin-top: 40px; */
+  margin: 0 0;
+  text-decoration: none;
+
+}
+
+.navbar2 a:hover {
+  background-color: #7def82;
+  /*Change background color on hover */
+}
+
+.close-menu {
+  display: none;
+}
+
+/* Image Gallery */
+
+.image-gallery {
+
+  position: relative;
+  text-align: center;
+  margin-left: auto;
+  /* Remove fixed margin */
+  margin-right: auto;
+  /* Remove fixed margin */
+  max-width: 100%;
+  overflow: hidden;
+  z-index: 1;
+  /* Set a higher z-index value */
+  /* Set a higher z-index value */
+}
+
+.image-gallery img {
+  max-width: 100%;
+  height: auto;
+  /* margin-left: 80px;
+        margin-right: 80px; */
+
+}
+
+.slideshow-container {
+  position: relative;
+  width: 100%;
+}
+
+.mySlides {
+  display: none;
+  width: 100%;
+  height: auto;
+  animation: fade 1.5s ease-in-out infinite;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.mySlides.fade {
+  animation-name: fade;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 16px;
+  cursor: pointer;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  z-index: 2;
+
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.next {
+  right: 0;
+  margin-right: 0px;
+}
+
+.prev {
+  left: 0;
+  margin-left: 0px;
+}
+
+.dot {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-color: #bbb;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 0 8px;
+  transition: background-color 0.3s;
+}
+
+.dot.active {
+  background-color: #717171;
+}
+
+
+.news-section {
+  background-color: #05050592;
+  display: flex;
+  padding: 5px;
+  /* margin-right: 20px; */
+
+  align-items: center;
+}
+
+.latest-update {
+  margin-left: 10%
+    /* Adjust as needed */
+
+}
+
+/* Style for the marquee */
+marquee {
+  flex: 3;
+  /* Allow the marquee to take up more space */
+  white-space: nowrap;
+  /* Prevent the marquee from wrapping */
+}
+
+/* calender and notice bar */
+
+.container1 {
+
+  display: flex;
+  /* justify-content: space-between; */
+  margin-left: auto;
+  /* Remove fixed margin */
+  margin-right: auto;
+  /* Remove fixed margin */
+  background: scroll;
+  z-index: 2;
+  /* height: auto; */
+  width: 100%;
+  /* Add width: 100% to prevent overflow */
+  box-sizing: border-box;
+  /* Include padding in the element's total width */
+  text-align: center;
+
+}
+
+/* calender  */
+
+.Calendar {
+  max-width: 350px;
+  max-height: 300px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  border: 2px solid #ccc;
+  /* Add border to the calendar */
+  border-radius: 10px;
+  /* Add rounded corners for a modern look */
+  padding: 5px;
+  /* Add some padding for spacing */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* Add a subtle shadow */
+  transform: translateY(-10px);
+  z-index: 2;
+  background: linear-gradient(to right, #70e1f5, #ffd194);
+  box-sizing: border-box;
+}
+
+.month {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.month-header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 2px;
+}
+
+.day {
+  text-align: center;
+  padding: 1px;
+  border: 1px solid #ccc;
+  /* background-color:whitesmoke; */
+  cursor: pointer;
+}
+
+.day:hover {
+  background-color: #7def82;
+  cursor: pointer;
+}
+
+.current-date {
+  background-color: rgb(154, 152, 214);
+  color: white;
+  border-radius: 25%;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+}
+
+
+
+.popup {
+  display: none;
+  position: absolute;
+  /* Position the popup absolutely */
+  top: calc(100% + 100px);
+  /* Position the popup below the clicked date cell */
+  left: 5px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  /* Ensure the popup appears above other content */
+}
+
+
+.popup-content {
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.popup-content h3 {
+  margin-bottom: 10px;
+}
+
+.dropdown {
+  position: absolute;
+  background-color: #d7d6d6;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 8px 0;
+
+  z-index: 1;
+  display: none;
+  overflow: hidden;
+
+}
+
+.dropdown span {
+  padding: 8px 16px;
+  display: block;
+  cursor: pointer;
+}
+
+.dropdown span:hover {
+  background-color: #e5e5e5;
+}
+
+
+
+
+/* important link section */
+
+.main-content {
+  flex: 1;
+  flex: 40%;
+  border: 2px solid #ccc;
+  /* Add border to the calendar */
+  border-radius: 10px;
+  /* Add rounded corners for a modern look */
+
+  border-width: 2px;
+  max-height: 300px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* Add a subtle shadow */
+  padding: 10px;
+  text-align: center;
+  /* margin: 0 ; */
+  box-sizing: border-box;
+  /* Include padding and border in the element's total width and height */
+  max-width: calc(100% - 220px);
+  overflow: hidden;
+  position: relative;
+  /* Ensure relative positioning for absolute children */
+  /* background-color: #333; */
+
+
+}
+
+.navbar3 {
+  display: flex;
+  background-color: yellowgreen;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  /* Position navbar relative to .main-content */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #5cb85c;
+  /* Green background color */
+  padding: 10px;
+  z-index: 2;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Add shadow for depth */
+
+
+
+}
+
+.navbar3 ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+
+}
+
+.navbar3 a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px;
+  margin: 0 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  border-right: 1px solid #ccc;
+}
+
+.navbar3 a:hover {
+  background-color: #4CAF50;
+  /* Darker green color on hover */
+}
+
+
+
+
+
+
+.scrolling-links {
+
+  animation: scroll 10s linear infinite;
+
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateY(-0%);
+  }
+
+  100% {
+    transform: translateY(-100%);
+  }
+
+
+
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  padding: 2px;
+  /* margin-left: 80px;
+      margin-right: 80px; */
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+
+
+}
+
+.navbar {
+  background-color: #3e3e3e;
+  overflow: hidden;
+  display: flex;
+  margin-top: 0;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+
+.navbar a {
+  float: left;
+  color: white;
+  text-align: center;
+
+  padding: 5px;
+  text-decoration: none;
+  font-size: 14px;
+  cursor: pointer;
+  border-right: 1px solid #ccc;
+}
+
+.navbar a:last-child {
+  border-right: none;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.content {
+  display: none;
+  padding: 20px;
+}
+
+.content.active {
+  display: block;
+}
+
+/* photo gallery */
+#photo-gallery {
+  position: relative;
+}
+
+.slider {
+  display: flex;
+  overflow-x: auto;
+}
+
+.slide {
+  margin-right: 10px;
+}
+
+.image-box {
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.image-box img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.see-more {
+  position: absolute;
+  font-size: smaller;
+  top: 60px;
+  right: 10px;
+  text-decoration: none;
+
+}
+
+.see-more i {
+  margin-left: 5px;
+  
+}
+
+
+
+
+
+
+/* video gallery */
+
+
+
+.video-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  display: inline-block;
+}
+
+.video-container {
+  margin: 10px;
+}
+
+.video-container iframe {
+  width: 320px;
+  /* Adjust the width as needed */
+  height: 180px;
+  /* Adjust the height as needed */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* news clips and rang mandal */
+.content-container {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: space-between;
+  /* Adjust as needed */
+  margin: -10px;
+  /* Negative margin to counteract padding on children */
+}
+
+.news-clip,
+.rang-mandal {
+  flex: 0 0 calc(50% - 20px);
+  /* Adjust width of items */
+  margin: 10px;
+  /* Spacing between items */
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  /* Include padding and border in width calculation */
+}
+
+.news-clip h2,
+.rang-mandal h2 {
+  margin-top: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.news-clip p,
+.rang-mandal p {
+  margin-bottom: 10px;
+  color: #666;
+}
+
+.news-clip iframe,
+.rang-mandal img {
+  width: 100%;
+  height: auto;
+  border: none;
+  border-radius: 5px;
+}
+
+
+
+
+
+
+
+/* banner*/
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #ffd194, #70e1f5);
+  padding: 30px 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 15px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.item:hover {
+  transform: translateY(-5px);
+}
+
+.item img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.item h3 {
+  margin: 10px 0 5px;
+  font-size: 15px;
+  color: #333;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.item p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ff6f00;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+
+.center-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  background: linear-gradient(to right, #ffd194, #70e1f5);
+  padding: 40px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+
+  width: 100%;
+
+}
+
+
+
+.details {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px;
+  padding: 5px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.details:hover {
+  transform: translateY(-10px);
+}
+
+.details img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.details h3 {
+  margin: 10px 0 5px;
+  font-size: 15px;
+  color: #333;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+
+.instrumental,
+.vocal,
+.dancing {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+
+
+.instrumental .details {
+  background-color: #b0f578;
+}
+
+.vocal .details {
+  background-color: #79e1e4;
+}
+
+.dancing .details {
+  background-color: #f4b07f;
+}
+
+/* association */
+
+
+
+
+
+
+
+
+/* bottom Section */
+.bottom-section {
+  padding: 0px;
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+
+}
+
+.content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  background-color: #78b0f5;
+  color: #fff;
+  border-radius: 5px;
+ 
+  /* padding: 10px; */
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #000000;
+}
+
+/* Quick Links */
+.quick-links {
+  flex-basis: 40%;
+}
+
+.quick-links-content {
+  
+  display: flex;
+  padding: 0;
+  margin: 0;
+  text-align:justify ;
+  /* justify-content: space-between; */
+}
+
+#A, #B {
+  flex-basis: 30%;
+  
+ 
+  
+}
+
+.quick-links ul {
+  list-style-type: none;
+  
+  /* text-align: center; */
+  padding: 0;
+  margin: 0; 
+}
+
+.quick-links ul li {
+  margin-bottom: 10px;
+  padding-left: 10px;
+  /* justify-content: space-between; */
+}
+
+.quick-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.quick-links a:hover {
+  color: #e67e22;
+}
+
+/* Social Media */
+.social-media {
+  flex-basis: 20%;
+  padding: 5%;
+
+  text-align: center;
+}
+
+.social-media ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.social-media ul li {
+  margin-right: 10px;
+}
+
+.social-media a {
+  color: #000000;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+  color: #e67e22;
+}
+
+.social-media i {
+  font-size: 24px;
+}
+
+/* Map */
+.map {
+  flex-basis: 40%;
+}
+
+.map iframe {
+  width: 90%;
+  height: 300px;
+  border: none;
+}
+
+.footer-text {
+  text-align: center;
+}
+.footer-design {
+  font-size: small;  /* Adjust the font size as needed */
+  color: #888;       /* Adjust the color as needed */
+  margin-top: 5px;   /* Adds space above the designer text */
+  text-align: center; /* Center the text if desired */
+}
+
+
+/* Hide the close button by default */
+.close-menu {
+  display: none;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 15px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.close-menu:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* for small screen size */
+
+@media (max-width: 768px) {
+
+  .navbar1 .menu,
+  .navbar2 .menu {
+    display: none;
+  }
+
+  .navbar1 .menu-toggle,
+  .navbar2 .menu-toggle {
+    display: block;
+  }
+
+  .navbar1 .menu.open,
+  .navbar2 .menu.open {
+    display: block;
+    position: absolute;
+    top: 50px;
+    /* Adjust based on navbar1 height */
+    left: 0;
+    width: 80%;
+    background-color: #1d1a1ae2;
+    padding: 5px;
+    z-index: 400;
+    /* Ensure the menu appears on top */
+  }
+
+  .navbar1 .menu.open a,
+  .navbar2 .menu.open a {
+    display: block;
+    margin: 5px 0;
+  }
+
+  .navbar1 .menu.open .close-menu,
+  .navbar2 .menu.open .close-menu {
+    display: flex;
+    /* Show the close button only when the menu is open on small screen size */
+  }
+
+  .logos-section {
+    flex-wrap: wrap;
+    /* Allow items to wrap to next line */
+  }
+
+  .logo1,
+  .logo2 {
+    margin: 5px;
+    /* Adjust margin for smaller screens */
+  }
+
+  .container2 {
+    margin-left: 15px;
+    /* Remove left margin for small screens */
+    margin-right: 15px;
+    /* Remove right margin for small screens */
+  }
+
+
+
+
+
+  .prev {
+    margin-left: 0px;
+  }
+
+  .next {
+    margin-right: 0px;
+  }
+
+  .navbar3 ul {
+
+    display: inline-block;
+    overflow: hidden;
+
+  }
+
+  .navbar3 ul a {
+    margin: 2px 0;
+
+  }
+
+  .container1 {
+    margin-left: 0px;
+    margin-right: 0px;
+    flex-direction: column;
+  }
+
+  .Calendar {
+    margin-bottom: 0px;
+  }
+
+  /* Important Links Section */
+  .main-content {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .banner {
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+
+  .item {
+    margin: 10px;
+  }
+
+  /* Center Container */
+  .center-container {
+    padding: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  /* Feedback Container */
+  .carousel img {
+    width: 80px;
+  }
+
+  /* Bottom Section */
+  .bottom-section {
+    text-align: center;
+    align-items: center;
+  }
+
+  .content-wrapper {
+    flex-direction: column;
+  }
+
+  .quick-links,
+  .social-media,
+  .map {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+
+  .quick-links-content {
+    flex-direction: column;
+    text-align: center;
+    text-align: inherit;
+  }
+
+  #A,
+  #B {
+    flex-basis: 100%;
+  }
+}
